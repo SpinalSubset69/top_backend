@@ -9,7 +9,7 @@ html {
 
 .left-banner {
   width: 50%;
-  background-color: #fce355;
+  background-color: var(--yellow);
   height: auto;
 }
 
@@ -68,14 +68,14 @@ html {
 
 .form-inputs input:focus {
   outline: none;
-  border: 5px solid #fce355;
+  border: 5px solid var(--yellow);
   transition: all 0.5s ease-in-out;
 }
 
 .login-form button {
   width: 150px;
   height: 45px;
-  background: #fce355;
+  background: var(--yellow);
   border-radius: 20px;
   border: none;
   font-size: 18px;

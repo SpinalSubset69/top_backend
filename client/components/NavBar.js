@@ -1,35 +1,23 @@
-import React from 'react';
-import logo from '../static/logo.jpg';
+import React from "react";
+import { Link, Route, Switch } from "react-router-dom";
+import logo from "../static/TOP.png";
+import UsersPlan from "./Users/UsersPlan";
 
 const NavBar = () => {
-    return (
-        <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <div className="container-fluid">
-      <a className="navbar-brand" href="#"><img src={logo} className="nav-img-logo" alt="..."/></a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarText">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Features</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-        <span className="navbar-text">
-          Navbar text with an inline element
-        </span>
-      </div>
+  return (    
+    <div className="nav-bar-container">    
+      <div className="nav-bar-options">
+      <Link to="/"><img src={logo}/> </Link>
+        <ul>
+          <li><Link>Inicio</Link></li>
+          <li><Link>Planes</Link></li>
+          <li><Link>Ubicación</Link></li>
+        </ul>      
+      </div>      
+     
+      <div><Link className="btn-nav">Prueba</Link></div>
     </div>
-  </nav>
-      </div>
-    );
-}
+  );
+};
 
 export default NavBar;

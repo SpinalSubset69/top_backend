@@ -23,7 +23,7 @@ app.use("/dist", express.static(path.join(CURRENT_WORKING_DIR, "./dist")));
 app.use("/api", userRouter);
 
 //Send react components to browser DO NOT MOVE
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.status(200).send(template());
 });
 
