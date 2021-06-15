@@ -53,17 +53,27 @@
   }   
 }
 
-@media(max-width: 1500px){
-  .main-page-container{         
+@media(max-width: 1366px){
+  .main-page-container{
     display: flex;
-    flex-direction: column;  
-  }    
+    flex-direction: row;
+    height: 100%;
+  }
+
   .main-image{
     width: 100%;                
   }
   .main-image img{
     width: 100%;
-  }
+    height: 100%;
+  } 
+}
+
+@media(max-width: 1130px){
+  .main-page-container{         
+    display: flex;
+    flex-direction: column;  
+  }   
 }
 
 @media(max-width: 411px){

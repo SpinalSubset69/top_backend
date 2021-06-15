@@ -1,0 +1,8 @@
+.users-plan-container{
+    width: 100%;
+}
+
+.plan-container{
+    display: flex;
+    flex-direction: column;
+}

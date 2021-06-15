@@ -10,5 +10,6 @@ import "./styles/footer.css";
 import "./styles/login.css";
 import "./styles/users-main-page.css";
 import "./styles/images-slider.css";
+import "./styles/users-plan.css";
 
 render(<App />, document.getElementById("root"));

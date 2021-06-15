@@ -3,8 +3,15 @@ import { hot } from "react-hot-loader";
 
 const UsersPlan = () => {
   return (
-    <div>
-      <h1>Hola a todos</h1>
+    <div className="users-plan-container">
+      <div className="main-span">
+        <h1>Mira Nuestros Planes</h1>
+      </div>
+      <div className="plan-container">
+        <div className="pt-plan">
+            <h1></h1>
+        </div>
+      </div>
     </div>
   );
 };
