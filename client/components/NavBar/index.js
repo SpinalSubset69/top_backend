@@ -29,7 +29,7 @@ export const NavBar = ( { toggle } ) => {
               <NavLink to={`${url}`}>Inicio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="about">Planes</NavLink>
+              <NavLink to={`/planes`}>Planes</NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="about">Ubicación</NavLink>

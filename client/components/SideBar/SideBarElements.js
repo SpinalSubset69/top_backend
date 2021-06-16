@@ -56,7 +56,7 @@ export const SideBarMenu = styled.ul`
     }
     
 `
-export const SideBarLink = styled(LinkS)`    
+export const SideBarLink = styled(LinkR)`    
     display: flex;
     align-items: center;
     justify-content: center;

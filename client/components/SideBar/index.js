@@ -8,10 +8,9 @@ import {
   SideBarWrapper,
   SideBarMenu,
   SideBtnWrap,
-  SideBarRoute
+  SideBarRoute,
 } from "./SideBarElements";
 const SideBar = ({ isOpen, toggle }) => {
-  
   return (
     <>
       <SideBarContainer isOpen={isOpen} onClick={toggle}>
@@ -19,17 +18,25 @@ const SideBar = ({ isOpen, toggle }) => {
           <CloseIcon />
         </Icon>
         <SideBarWrapper>
-          <SideBarMenu>             
-            <SideBarLink to="/">Inicio</SideBarLink>
+          <SideBarMenu>
+            <SideBarLink onClick={toggle} to="/">
+              Inicio
+            </SideBarLink>
           </SideBarMenu>
           <SideBarMenu>
-            <SideBarLink to="/">Planes</SideBarLink>
+            <SideBarLink onClick={toggle} to="/planes">
+              Planes
+            </SideBarLink>
           </SideBarMenu>
           <SideBarMenu>
-            <SideBarLink to="/">Ubicación</SideBarLink>
+            <SideBarLink onClick={toggle} to="/">
+              Ubicación
+            </SideBarLink>
           </SideBarMenu>
           <SideBtnWrap>
-              <SideBarRoute to="/prueba">Prueba</SideBarRoute>
+            <SideBarRoute onClick={toggle} to="/prueba">
+              Prueba
+            </SideBarRoute>
           </SideBtnWrap>
         </SideBarWrapper>
       </SideBarContainer>
