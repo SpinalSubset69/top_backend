@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Components Area
 import Login from "./components/AreaManager/Login";
-import MainPage from "./components/MainPage";
-import UsersMainPage from "./components/Users/UsersMainPage";
+import Home from './pages';
 
 const App = () => {
   return (
@@ -13,8 +12,8 @@ const App = () => {
       <Router>
         <div>
           <Switch>                        
-            <Route exact path="/" component={MainPage} />                 
-            <Route path="/entrena-con-nosotros" component={UsersMainPage}/>        
+            <Route exact path="/" component={Home} />                 
+            <Route path="/entrena-con-nosotros" component={Home}/>        
             <Route exact path="/area-manager" component={Login} />        
           </Switch>
         </div>

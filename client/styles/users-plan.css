@@ -71,3 +71,62 @@
 .plan-content ul li small{
     float: right;
 }
+
+
+@media (max-width: 970px) {
+    .schedule-container img{
+        width: 75%;
+    }
+
+    .plan-content{
+        padding: 10px;
+    }
+
+    .plan-content ul {
+        width: 100%;
+    }
+
+    .plan-content ul li{
+        font-size: 20px;
+    }
+
+    .plan-header{
+        margin-bottom: 25px;
+    }
+
+    .plan-content img{        
+        margin-left: 10px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+
+    .schedule-container img{
+        width: 100%;
+    }
+
+    .plan-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan-content img{        
+        height: 70px;
+        width: 70px;
+        margin-bottom: 20px;
+    }
+
+    .plan-content ul li img{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px
+    }
+     
+
+    .plan-content ul li{
+            display: flex;    
+            align-items: center;
+    }
+}

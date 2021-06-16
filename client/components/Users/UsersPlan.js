@@ -46,13 +46,13 @@ const UsersPlan = () => {
             <h3>Comparte la experiencia de entrenar con tu familia o amigos.</h3>
           </div>
             <div className="plan-content">               
+            <img src={ffIco} />
                 <ul>
                   <li><img src={checkIco} />Crea tu propio grupo.</li>
                   <li><img src={checkIco} />Disfruta de ejercitarte con tus amigos.</li>
-                  <li><img src={checkIco} />$800 por sesión, grupos máximo de 6 personas.</li>
+                  <li><img src={checkIco} />$800 por sesión, máximo 6 personas.</li>
                   <li><small>*Consulte horarios disponibles</small></li>
-                </ul>
-                <img src={ffIco} />
+                </ul>               
             </div>
         </div>
         <div className="plan">

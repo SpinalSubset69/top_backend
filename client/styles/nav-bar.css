@@ -70,8 +70,12 @@
   transition: all 0.5s ease-in-out;
 }
 
-@media(max-width: 970px){
+@media(max-width: 1320px){
   .nav-bar-options {
       width: 75%;
+  }
+  .btn-nav{
+    width: 20%;
+    height: 80%;
   }
 }
