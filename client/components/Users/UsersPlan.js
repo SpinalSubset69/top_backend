@@ -5,7 +5,7 @@ import tgIco from '../../static/tg-ico.png';
 import ptIco from '../../static/pt-ico.png';
 import ffIco from '../../static/ff-ico.png';
 import checkIco from '../../static/check.png'
-import topSchedule from '../../static/Top-Schedule.jpg';
+import topSchedule from '../../static/TOP-Schedule.jpg';
 
 const UsersPlan = () => {
 
