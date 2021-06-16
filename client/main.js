@@ -11,5 +11,6 @@ import "./styles/login.css";
 import "./styles/users-main-page.css";
 import "./styles/images-slider.css";
 import "./styles/users-plan.css";
+import "./styles/up-button.css";
 
 render(<App />, document.getElementById("root"));

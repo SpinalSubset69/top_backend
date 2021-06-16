@@ -57,12 +57,14 @@
   .main-page-container{
     display: flex;
     flex-direction: row;
-    height: 100%;
+    
   }
 
   .main-image{
     width: 100%;                
+    
   }
+
   .main-image img{
     width: 100%;
     height: 100%;
@@ -100,3 +102,17 @@
       font-size: 32px;
     }
 } 
+
+
+@media (height: 976px) {
+  .main-image img{
+    height: 100%;
+  }
+}
+
+
+@media (height: 720px) {
+  .main-image img{
+    height: 100%;
+  }
+}

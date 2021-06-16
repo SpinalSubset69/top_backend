@@ -1,0 +1,21 @@
+.up-button{
+    position: absolute;
+    width: 100%;        
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.up-button img{    
+    position: absolute;  
+    z-index: 1;    
+}
+
+.up-button img:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}

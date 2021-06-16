@@ -4,7 +4,7 @@ import imgLeft from "../static/gym-left.jpg";
 import imgRight from "../static/gym-right.jpg";
 import logo from "../static/logo.jpg";
 import { hot } from "react-hot-loader";
-const MainPage = () => {
+const MainPage = () => {  
   return (
       <div className="main-page-container">
         <Link to="/area-manager" className="main-image">

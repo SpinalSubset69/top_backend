@@ -11,7 +11,7 @@ const UsersMainPage = () => {
     let {path, url} = useRouteMatch();    
     return(
         <div className="users-main-page-container">
-         <NavBar/>
+         <NavBar className="nav-bar"/>
             <div className="main-container">                
                 <Switch>                    
                     <Route path={`${path}/planes`} component={UsersPlan}/>        

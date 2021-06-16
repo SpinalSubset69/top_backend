@@ -1,4 +1,5 @@
-import React from "react";
+import  React  from "react";
+import { useEffect } from "react";
 import { hot } from "react-hot-loader";
 import { Link, useRouteMatch } from "react-router-dom";
 import ImagesSlider from "./ImagesSlider";
@@ -6,9 +7,16 @@ import checkIco from '../../static/check.png'
 import tgIco from '../../static/tg-ico.png';
 import ptIco from '../../static/pt-ico.png';
 import ffIco from '../../static/ff-ico.png';
+import UpButton from "../UpButton";
 
 const UsersMain = () => {
   let { url } = useRouteMatch();
+
+  useEffect(() => {
+    window.scrollTo(0,100,{
+      behavior: 'smooth',   
+    })
+  });
   return (
     <div className="user-main-container">
       <div className="main-span">
@@ -44,11 +52,12 @@ const UsersMain = () => {
             <div className="plans-option"><img src={tgIco}/>Únete a nuestras clases grupales<br/> en un amplio horario y un reducido numero de personas.</div>           
         </div>         
       </div>
-      <div className="plans-button"><Link className="btn-gym">Conoce más</Link></div>
+      <div className="plans-button"><Link className="btn-gym" to={`${url}/planes`}>Conoce más</Link></div>
     <div className="end-banner">
       <p>Visita Nuestra Sucursal</p>
       <Link className="btn-gym">Ubicación</Link>
     </div>
+  
     </div>
   );
 };

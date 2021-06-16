@@ -1,8 +1,73 @@
+.schedule-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    animation: fade 1s ease-in-out both;
+}
+
+
+.schedule-container h1{
+    margin-bottom: 50px;
+}
+
 .users-plan-container{
     width: 100%;
 }
 
 .plan-container{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    animation: fade 1s ease-in-out both;
+}
+
+.plan{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.plan-content{
+    display: flex;    
+    width: 100%;
+    justify-content: center;
+}
+
+.plan-header{
+    margin-bottom: 75px;
+}
+
+.plan-content img{
+    height: 80px;
+    margin-left: 25px;
+}
+
+.plan-content ul{
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-content ul li{
+    font-size: 25px;
+}
+
+.plan-content ul li img{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px
+}
+
+.plan-content ul li small{
+    float: right;
 }
