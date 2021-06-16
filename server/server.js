@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //Complie application with webpack, use oinly on npm run development
-devBundle.compile(app); 
+//devBundle.compile(app); 
 
 //Load dist folder to use static files
 app.use("/dist", express.static(path.join(CURRENT_WORKING_DIR, "./dist")));

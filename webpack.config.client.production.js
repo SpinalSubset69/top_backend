@@ -28,6 +28,9 @@ const config = {
       },    
     ],
   },
+  resolve: {
+    extensions: ['.js','jpg','png', 'css'],
+  }
 };
 
 module.exports = config;
