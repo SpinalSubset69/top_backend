@@ -2,7 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader';
 import NavBar from '../NavBar';
 import { Route, Switch, useRouteMatch } from 'react-router-dom';
-import Footer from '../Footer';
+
 import UsersMain from './UsersMain';
 import UsersPlan from './UsersPlan';
 
