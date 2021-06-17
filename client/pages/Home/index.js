@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { hot } from 'react-hot-loader';
 import NavBar from '../../components/NavBar';
 import SideBar from '../../components/SideBar';
-import UsersPlan from '../../components/Users/UsersPlan';
+import UsersPlan from '../../components/UsersPlan';
 import { BrowserRouter as Router ,Switch, Route } from 'react-router-dom';
 import { HomeContainer } from './HomeElements';
 import { HomeUsers } from '../../components/UsersMain';
@@ -22,7 +22,7 @@ const Home = () => {
                 <HomeContainer>
                     <Switch>                    
                         <Route exact path='/' component={ HomeUsers }/>                                
-                        <Route path= '/planes' component={UsersPlan}/>                            
+                        <Route exact path= '/planes' component={UsersPlan}/>                            
                     </Switch>      
                 </HomeContainer>         
             </Router>                             
@@ -30,5 +30,5 @@ const Home = () => {
     )
 }
 
-
+    
 export default hot(module)(Home);

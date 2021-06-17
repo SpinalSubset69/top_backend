@@ -25,12 +25,12 @@ const config = {
         test: /\.(png|svg|jpg|jpeg|gif)?$/,
         exclude: /node_modules/,
         use: ["file-loader"],
-      },    
+      },
     ],
   },
   resolve: {
-    extensions: ['.js','jpg','png', 'css'],
-  }
+    extensions: [".js", "jpg", "png", "css", "svg"],
+  },
 };
 
 module.exports = config;

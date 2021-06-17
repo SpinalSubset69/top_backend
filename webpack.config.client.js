@@ -39,7 +39,7 @@ const config = {
     new webpack.NoEmitOnErrorsPlugin(),
   ],
   resolve: {
-    extensions: ['.js','jpg','png', 'css'],
+    extensions: ['.js','jpg','png', 'css', 'svg'],
     alias: {
       "react-dom": "@hot-loader/react-dom",
     },

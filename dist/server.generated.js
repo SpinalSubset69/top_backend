@@ -142,7 +142,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var webp
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst Moment = __webpack_require__(/*! moment */ \"moment\");\n\nconst MomentRange = __webpack_require__(/*! moment-range */ \"moment-range\");\n\nconst moment = MomentRange.extendMoment(Moment);\nconst validateDates = {\n  validateRange: fecha => {\n    const fechaSplit = fecha.split(\"-\");\n    const date = new Date();\n\n    if (fechaSplit[2] >= date.getFullYear()) {\n      if (fechaSplit[1] >= date.getMonth()) {\n        if (fechaSplit[0] >= date.getDate()) {\n          return true;\n        }\n      }\n    }\n\n    return false;\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (validateDates);\n\n//# sourceURL=webpack:///./server/helpers/dates.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst validateDates = {\n  validateRange: fecha => {\n    const fechaSplit = fecha.split(\"-\");\n    const date = new Date();\n\n    if (fechaSplit[2] >= date.getFullYear()) {\n      if (fechaSplit[1] >= date.getMonth()) {\n        if (fechaSplit[0] >= date.getDate()) {\n          return true;\n        }\n      }\n    }\n\n    return false;\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (validateDates);\n\n//# sourceURL=webpack:///./server/helpers/dates.js?");
 
 /***/ }),
 
@@ -201,7 +201,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const path = __webpack_require__(/*! path */ \"path\");\n\nconst webpack = __webpack_require__(/*! webpack */ \"webpack\");\n\nconst CURRENT_WORKING_DIR = process.cwd();\nconst config = {\n  name: \"browser\",\n  mode: \"development\",\n  devtool: \"eval-source-map\",\n  entry: [\"webpack-hot-middleware/client?reload=true\", path.join(CURRENT_WORKING_DIR, \"./client/main.js\")],\n  output: {\n    path: path.join(CURRENT_WORKING_DIR, \"/dist\"),\n    filename: \"bundle.js\",\n    publicPath: \"/dist/\"\n  },\n  module: {\n    rules: [{\n      test: /\\.jsx?$/,\n      exclude: /node_modules/,\n      use: [\"babel-loader\"]\n    }, {\n      test: /\\.css?$/,\n      exclude: /node_modules/,\n      use: [\"style-loader\", \"css-loader\"]\n    }, {\n      test: /\\.(png|svg|jpg|jpeg|gif)?$/,\n      exclude: /node_modules/,\n      use: [\"file-loader\"]\n    }]\n  },\n  plugins: [new webpack.HotModuleReplacementPlugin(), new webpack.NoEmitOnErrorsPlugin()],\n  resolve: {\n    extensions: ['.js', 'jpg', 'png', 'css'],\n    alias: {\n      \"react-dom\": \"@hot-loader/react-dom\"\n    }\n  }\n};\nmodule.exports = config;\n\n//# sourceURL=webpack:///./webpack.config.client.js?");
+eval("const path = __webpack_require__(/*! path */ \"path\");\n\nconst webpack = __webpack_require__(/*! webpack */ \"webpack\");\n\nconst CURRENT_WORKING_DIR = process.cwd();\nconst config = {\n  name: \"browser\",\n  mode: \"development\",\n  devtool: \"eval-source-map\",\n  entry: [\"webpack-hot-middleware/client?reload=true\", path.join(CURRENT_WORKING_DIR, \"./client/main.js\")],\n  output: {\n    path: path.join(CURRENT_WORKING_DIR, \"/dist\"),\n    filename: \"bundle.js\",\n    publicPath: \"/dist/\"\n  },\n  module: {\n    rules: [{\n      test: /\\.jsx?$/,\n      exclude: /node_modules/,\n      use: [\"babel-loader\"]\n    }, {\n      test: /\\.css?$/,\n      exclude: /node_modules/,\n      use: [\"style-loader\", \"css-loader\"]\n    }, {\n      test: /\\.(png|svg|jpg|jpeg|gif)?$/,\n      exclude: /node_modules/,\n      use: [\"file-loader\"]\n    }]\n  },\n  plugins: [new webpack.HotModuleReplacementPlugin(), new webpack.NoEmitOnErrorsPlugin()],\n  resolve: {\n    extensions: ['.js', 'jpg', 'png', 'css', 'svg'],\n    alias: {\n      \"react-dom\": \"@hot-loader/react-dom\"\n    }\n  }\n};\nmodule.exports = config;\n\n//# sourceURL=webpack:///./webpack.config.client.js?");
 
 /***/ }),
 
@@ -235,28 +235,6 @@ eval("module.exports = require(\"dotenv\");\n\n//# sourceURL=webpack:///external
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"express\");\n\n//# sourceURL=webpack:///external_%22express%22?");
-
-/***/ }),
-
-/***/ "moment":
-/*!*************************!*\
-  !*** external "moment" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"moment\");\n\n//# sourceURL=webpack:///external_%22moment%22?");
-
-/***/ }),
-
-/***/ "moment-range":
-/*!*******************************!*\
-  !*** external "moment-range" ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"moment-range\");\n\n//# sourceURL=webpack:///external_%22moment-range%22?");
 
 /***/ }),
 

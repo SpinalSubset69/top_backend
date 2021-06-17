@@ -1,8 +1,3 @@
-const Moment = require("moment");
-const MomentRange = require("moment-range");
-
-const moment = MomentRange.extendMoment(Moment);
-
 const validateDates = {
   validateRange: (fecha) => {
     const fechaSplit = fecha.split("-");

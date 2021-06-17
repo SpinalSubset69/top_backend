@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { hot } from "react-hot-loader";
 import {
   HomeUsersContainer,
@@ -15,30 +15,39 @@ import {
   PlansItem,
   PlansWrapper,
   PlansIco,
-  HomeEndSpan
+  HomeEndSpan,
+  MainSpanImg
 } from "./UsersElements";
 import checkIco from '../../static/check.png';
-import ImagesSlider from "../Users/ImagesSlider";
 import ptIco from '../../static/pt-ico.png';
 import ffIco from '../../static/ff-ico.png';
 import tgIco from '../../static/tg-ico.png';
+import ImagesSlider from "../Users/ImagesSlider";
+import logoTop from '../../static/LOGOTOP.png'
 
 export const HomeUsers = () => {
+  useEffect(() => {
+    window.scrollTo(0,100,{
+      behavior: 'smooth',   
+    })
+  });
+
   return (
     <>
       <HomeUsersContainer>
         <HomeMainSpan>
+          <MainSpanImg src={logoTop}/>
           <MainSpanH1>Nuestros Planes</MainSpanH1>
           <MainSpanLink to="/planes">Mira Nuestros Planes</MainSpanLink>
         </HomeMainSpan>        
         <HomeGoalsContainer>
             <GoalsP>¿Cuál es tu objetivo?</GoalsP>     
             <GoalsContainer>
-                <GoalsItem><GoalsIco src={checkIco} /> Perder peso</GoalsItem>
-                <GoalsItem><GoalsIco src={checkIco} /> Mejorar tu rendimiento</GoalsItem>
-                <GoalsItem><GoalsIco src={checkIco} /> Recuperar la forma</GoalsItem>
-                <GoalsItem><GoalsIco src={checkIco} /> Tonificar</GoalsItem>
-                <GoalsItem><GoalsIco src={checkIco} /> Recuperarte un lesión</GoalsItem>
+                <GoalsItem><GoalsIco/> Perder peso</GoalsItem>
+                <GoalsItem><GoalsIco /> Mejorar tu rendimiento</GoalsItem>
+                <GoalsItem><GoalsIco /> Recuperar la forma</GoalsItem>
+                <GoalsItem><GoalsIco /> Tonificar</GoalsItem>
+                <GoalsItem><GoalsIco /> Recuperarte de una lesión</GoalsItem>
             </GoalsContainer>       
         </HomeGoalsContainer>
         <ImagesSlider/>
@@ -49,7 +58,7 @@ export const HomeUsers = () => {
                 <PlansItem><PlansIco src={ffIco} />Comparte la experiencia de entrenar con tu familia <br/> o amigos que tengan un mismo ojetivo. </PlansItem>
                 <PlansItem><PlansIco src={tgIco} />Atención 100% personalizada.</PlansItem>
             </PlansWrapper>
-            <MainSpanLink to="/planes">Mira Nuestros Planes</MainSpanLink>
+            <MainSpanLink to="/planes">Ver Planes</MainSpanLink>
         </PlansContainer>     
         <HomeEndSpan>
           <MainSpanH1>Visita Nuestra Sucursal</MainSpanH1>

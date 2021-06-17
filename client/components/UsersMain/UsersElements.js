@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import mainSpan from '../../static/main-span.jpg';
 import endSpan from '../../static/gym-img-1.png';
+import { AiOutlineCheckCircle } from 'react-icons/ai'
 
 export const HomeUsersContainer = styled.section`    
     animation: fade 1s ease-in-out both;    
@@ -18,6 +19,11 @@ export const HomeMainSpan = styled.div`
     justify-content: center;
     align-items: center;    
     text-align: center;
+`
+
+export const MainSpanImg = styled.img`
+    width: 200px;
+    height: 100px;
 `
 
 export const MainSpanH1 = styled.h1`
@@ -51,17 +57,18 @@ export const HomeGoalsContainer = styled.div`
 `
 
 export const GoalsP = styled.p`
-    font-size: 38px;
+    font-size: 64px;
     color: #2c2c2c;
-
     @media screen and (max-width: 600px){
         font-size: 30px;
     }
 `
 export const GoalsContainer = styled.div`
+   
     display: grid;
     grid-template-columns: repeat(3, 400px);    
     align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 1230px){
         grid-template-columns: repeat(3, 350px); 
@@ -75,15 +82,26 @@ export const GoalsContainer = styled.div`
         grid-template-columns: repeat(2, 400px);         
     }
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 800px){              
         grid-template-columns: repeat(1, 200px);         
+    }
+
+    @media screen and (max-width: 375px){       
+        justify-content: flex-start;
+        width: 100%;
     }
 `
 
-export const GoalsIco = styled.img`
-    width: 35px;
-    height: 35px;
+export const GoalsIco = styled(AiOutlineCheckCircle)`
+    color: #fce355;
+    width: 65px;
+    height: 65px;
     margin-right: 10px;
+
+    @media screen and (max-width: 800px){        
+        width: 35px;
+        height: 35px;
+    }
 `
 
 export const GoalsItem = styled.div`
@@ -93,6 +111,11 @@ export const GoalsItem = styled.div`
     color: #2c2c2c;
     font-size: 25px;
     margin-bottom: 25px;
+    
+    @media screen and (max-width: 800px){            
+        width: 300px;
+       font-size: 24px;
+    }
 `
 
 export const PlansContainer = styled.div`
@@ -106,7 +129,7 @@ export const PlansContainer = styled.div`
 `
 
 export const PlansH1 = styled.h1`
-    font-size: 38px;
+    font-size: 64px;
     color: #2c2c2c;
 
     @media screen and (max-width: 600px){
