@@ -4,4 +4,8 @@ export const HomeContainer = styled.div`
      margin: 0 auto;
     width: 1440px;    
     background-color: white;
+
+    @media screen and (max-width: 1444px){
+        width: 100%;
+    }
 `

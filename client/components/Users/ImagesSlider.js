@@ -6,7 +6,7 @@ import gymImg2 from "../../static/gym-img1.jpeg";
 const ImagesSlider = () => {
   return (
         <div className="images-slider-container">
-            <h1>Ven y entena con nosotros</h1>
+            <h1>Ven y entrena con nosotros</h1>
             <div className="images">
                 <img src={gymImg}/>
                 <img src={gymImg2}/>

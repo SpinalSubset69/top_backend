@@ -20,6 +20,23 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 1230px){
+    .images-slider-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .images img{
+        margin-bottom: 50px;
+        width: 360px;
+    }
+}   
+
 @media(max-width: 800px){
     .images-slider-container{
         justify-content: center;
@@ -35,4 +52,11 @@
         margin-bottom: 50px;
         width: 360px;
     }
+}
+
+@media(max-width: 600px){
+    .images-slider-container h1{
+        font-size: 30px;
+    }
+    
 }

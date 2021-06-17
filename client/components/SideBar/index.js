@@ -35,7 +35,7 @@ const SideBar = ({ isOpen, toggle }) => {
           </SideBarMenu>
           <SideBtnWrap>
             <SideBarRoute onClick={toggle} to="/prueba">
-              Prueba
+              Acceso
             </SideBarRoute>
           </SideBtnWrap>
         </SideBarWrapper>
