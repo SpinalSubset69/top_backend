@@ -9,10 +9,12 @@ import {
   NavLink,
   NavMenu,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
+  LogoImg
 } from "./NavBarElements";
 import { FaBars } from "react-icons/fa";
 import { useRouteMatch } from "react-router";
+import logoTop from '../../static/LOGOTOP.png'
 
 export const NavBar = ( { toggle } ) => {
   const { url } = useRouteMatch();  
@@ -20,7 +22,7 @@ export const NavBar = ( { toggle } ) => {
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to="/">TOP</NavLogo>
+          <NavLogo to="/"><LogoImg src={logoTop} /></NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

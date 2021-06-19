@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
+  --background-main : #FCE355a8;
   --yellow: #FCE355;
   --black: #2c2c22;
   --green: #77bc1f;
+  --dark: #000000;
 }
 
 html{
@@ -13,8 +15,11 @@ html{
 body {
   padding: 0 !important;
   margin: 0 !important;
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--yellow);
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Encode Sans Expanded', sans-serif;
+  background-color: var(--background-main);
+  scroll-behavior: smooth;  
+ 
 }
 
 ::-webkit-scrollbar {

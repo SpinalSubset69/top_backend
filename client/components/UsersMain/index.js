@@ -37,9 +37,10 @@ export const HomeUsers = () => {
       <HomeUsersContainer>
         <HomeMainSpan>
           <MainSpanImg src={logoTop}/>
-          <MainSpanH1>Nuestros Planes</MainSpanH1>
-          <MainSpanLink to="/planes">Mira Nuestros Planes</MainSpanLink>
-        </HomeMainSpan>        
+          <MainSpanH1>Training Studio</MainSpanH1>
+          <MainSpanLink to="/planes">Ver Planes</MainSpanLink>
+        </HomeMainSpan>      
+        <ImagesSlider/>  
         <HomeGoalsContainer>
             <GoalsP>¿Cuál es tu objetivo?</GoalsP>     
             <GoalsContainer>
@@ -49,8 +50,7 @@ export const HomeUsers = () => {
                 <GoalsItem><GoalsIco /> Tonificar</GoalsItem>
                 <GoalsItem><GoalsIco /> Recuperarte de una lesión</GoalsItem>
             </GoalsContainer>       
-        </HomeGoalsContainer>
-        <ImagesSlider/>
+        </HomeGoalsContainer>       
         <PlansContainer>
             <PlansH1>Elige cualquiera de nuestros planes</PlansH1>
             <PlansWrapper>

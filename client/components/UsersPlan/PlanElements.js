@@ -10,7 +10,7 @@ export const PlanContainer = styled.section`
 
 export const PlanMainSpan = styled.div`
   width: 100%;
-  height: 600px;
+  height: 100%;
   background-image: url(${mainSpan});
   color: white;
   display: flex;
@@ -76,8 +76,15 @@ export const Schedule = styled.img`
 export const PlansWrapper = styled.div`
   margin-top: 50px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+
+  @media screen and (max-width: 1156px){
+    display: grid;
+    grid-template-columns: 1fr; 
+  }
+  
 `;
 
 export const PlanEndSpan = styled.div`

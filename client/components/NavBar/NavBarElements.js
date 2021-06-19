@@ -29,18 +29,20 @@ export const NavBarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
-    justify-content: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
     display: flex;
-    align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
-    
+    align-items: center;    
     &:hover{
-        text-decoration: none;
-        color: #ffffff;
+      
+    }
+`
+
+export const LogoImg = styled.img`
+    height: 60%;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
     }
 `
 
@@ -71,6 +73,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
+font-size: 20px;
     height: 80px;
     color: #ffffff;
 `

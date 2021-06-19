@@ -9,8 +9,9 @@ export const SideBarContainer = styled.aside`
     width: 100%;
     height: 100%;
     background: #2c2c2c;
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
@@ -39,21 +40,20 @@ export const Icon = styled.div`
 
 export const SideBarWrapper = styled.div`
     color: #ffffff;    
+
 `
 
 export const SideBarMenu = styled.ul`    
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 20px);    
-    text-align: center;
+    text-align: center;    
     
     @media screen and (max-width: 480px){
-        grid-template-rows: repeat(5, 20px) ;
-    }
-
-    @media screen and (max-width: 360px){
-        grid-template-rows: repeat(5, 20px) ;
-    }
+        grid-template-rows: repeat(3, 20px) ;
+    }    
     
 `
 export const SideBarLink = styled(LinkR)`    
@@ -63,14 +63,14 @@ export const SideBarLink = styled(LinkR)`
     font-size: 1.5rem;
     text-decoration: none;
     list-style: none;
-    transition: 0.2s ease-in-out;
-    text-decoration: none;
+    transition: 0.2s ease-in-out;    
     color: #ffffff;
     cursor: pointer;    
     
 
     &:hover{
-        color: #01bf71;
+        text-decoration: none;
+        color: var(--yellow);
         transition: 0.2s ease-in-out;
     }
 `
@@ -86,6 +86,7 @@ export const SideBarRoute = styled(LinkR)`
     background: #FCE355;
     white-space: nowrap;
     padding: 16px 64px;
+    font-weight: 700;
     color: #2c2c2c;
     font-size: 16px;
     outline: none;

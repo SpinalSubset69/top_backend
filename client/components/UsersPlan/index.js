@@ -30,8 +30,8 @@ const UsersPlan = () => {
       <PlanContainer>
         <PlanMainSpan>
           <MainSpanImg src={logoTop}/>
-          <MainSpanH1>Entrena con nosotros</MainSpanH1>
-          <MainSpanLink to="/planes">Acceso</MainSpanLink>
+          <MainSpanH1>Training Studio</MainSpanH1>      
+          <MainSpanH1>Planes</MainSpanH1>          
         </PlanMainSpan>
         <PlanScheduleContainer>
           <ScheduleH1>Horario TOP Training Studio</ScheduleH1>
