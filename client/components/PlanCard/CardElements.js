@@ -7,8 +7,8 @@ export const PlanItem = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 150px;
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 
@@ -16,6 +16,19 @@ export const PlanItem = styled.div`
     transition: all 0.3s ease-in-out;
     transform: scale(1.02);
   }
+
+  @media screen and (max-width: 1800px){
+   width: 50%;
+  }
+
+  @media screen and (max-width: 750px){
+   width: 75%;
+  }
+
+  @media screen and (max-width: 411px) {
+    width: 90%;
+  }
+
 
 `;
 
@@ -48,14 +61,30 @@ export const PlanH3Container = styled.div`
   transform: translateY(50px);
   background: ${({dark}) => (dark ? 'var(--yellow)' : '#000')};
   color: ${({dark}) => (dark ? '#000' : '#fff')} ;
+
+  @media screen and (max-width: 1120px) {
+    width: 350px;
+    height: 100px;  
+  }
+
+
+  @media screen and (max-width: 750px) {
+    width: 300px;
+  height: 100px;  
+  }
+
+  @media screen and (max-width: 411px) {
+    width: 200px;
+  height: 100px;  
+  }
 `;
 
 export const PlanH1 = styled.h1`
   font-size: 40px;
-  font-weight: 500;
-  color: ${({dark}) => (dark ? 'var(--yellow)' : 'var(--dark)')};
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
+  font-weight: 700;
+  color: ${({dark}) => (dark ? 'var(--yellow)' : 'var(--black)')};
+  @media screen and (max-width: 411px) {
+    font-size: 30px;
   }
 `;
 
@@ -63,6 +92,17 @@ export const PlanH1Subtitle = styled.h1`
   font-size: 64px;
   font-weight: 700;  
   color: ${({dark}) => (dark ? '#ffffff' : 'var(--dark)')};
+
+  @media screen and (max-width: 1120px) {
+    font-size: 48px; 
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: 411px) {
+    font-size: 40px;
+  }
 `
 
 export const PlanH3 = styled.h3`
@@ -70,8 +110,18 @@ export const PlanH3 = styled.h3`
   font-size: 24px;  
   font-weight: 700;
   width: 75%;
-  @media screen and (max-width: 768px) {
-    font-size: 30px;
+
+  @media screen and (max-width: 1120px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 750px) {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 411px) {
+    font-size: 18px;
   }
 `;
 
@@ -99,17 +149,32 @@ export const PlanDescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 28px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 411px) {      
+    font-size: 18px;
+  }
 `;
 
 export const PlanDescription = styled.div`
-  display: flex;
-  margin-bottom: 25px;
-
+  padding: 5px;
+  display: flex;  
+  align-items: center;  
+  margin-bottom: 50px;  
 `;
 
 export const CheckIco = styled(AiOutlineCheckCircle)`
+
   color: #fce355;
-  width: 50px;
-  height: 50px;
+  font-size: 50px;
   margin-right: 10px;
+
+  @media screen and (max-width: 750px){
+    margin-right: 5px;
+    font-size: 35px;
+  }
 `;
+

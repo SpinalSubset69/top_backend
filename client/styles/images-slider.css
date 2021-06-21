@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     text-align: center;
     animation: fade 1s ease-in-out both;
+    margin-bottom: 100px;
 }
 
 .images-slider-container h1{

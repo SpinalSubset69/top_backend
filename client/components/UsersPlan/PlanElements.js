@@ -80,7 +80,7 @@ export const PlansWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 100px;
 
-  @media screen and (max-width: 1156px){
+  @media screen and (max-width: 1800px){
     display: grid;
     grid-template-columns: 1fr; 
   }

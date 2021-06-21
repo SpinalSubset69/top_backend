@@ -5,7 +5,7 @@ export const HomeContainer = styled.div`
     width: 1900px;    
     background-color: white;
 
-    @media screen and (max-width: 1444px){
+    @media screen and (max-width: 1900px){
         width: 100%;
     }
 `
