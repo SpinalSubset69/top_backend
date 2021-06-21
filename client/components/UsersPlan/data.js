@@ -15,7 +15,7 @@ export const Plan1 = {
 
 export const Plan2 = {
     h1: "Friends and Family",
-    subtitle: "Comparte la experiencia de entrenar con tu familia o amigos",
+    subtitle: "Entrena con tu familia o tus amigos",
     planIco: ffIco,
     descrip1: "Crea tu propio grupo",
     descrip2: "Disfruta de ejercitarte con tus amigo",

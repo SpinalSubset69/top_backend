@@ -10,7 +10,7 @@ export const PlanContainer = styled.section`
 
 export const PlanMainSpan = styled.div`
   width: 100%;
-  height: 100%;
+  height: 600px;
   background-image: url(${mainSpan});
   color: white;
   display: flex;

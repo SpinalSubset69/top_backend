@@ -18,7 +18,7 @@ export const PlanItem = styled.div`
   }
 
   @media screen and (max-width: 1800px){
-   width: 50%;
+   width: 45%;
   }
 
   @media screen and (max-width: 750px){
@@ -56,7 +56,7 @@ export const PlanH3Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 350px;
   height: 100px;
   transform: translateY(50px);
   background: ${({dark}) => (dark ? 'var(--yellow)' : '#000')};
@@ -105,11 +105,10 @@ export const PlanH1Subtitle = styled.h1`
   }
 `
 
-export const PlanH3 = styled.h3`
-  margin-top: 25px;
-  font-size: 24px;  
+export const PlanH3 = styled.h3`  
+  font-size: 22px;  
   font-weight: 700;
-  width: 75%;
+    text-align: center;
 
   @media screen and (max-width: 1120px) {
     font-size: 20px;
