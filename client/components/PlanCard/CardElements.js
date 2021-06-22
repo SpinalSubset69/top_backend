@@ -162,7 +162,7 @@ export const PlanDescription = styled.div`
   padding: 5px;
   display: flex;  
   align-items: center;  
-  margin-bottom: 50px;  
+  margin-bottom: 25px;  
 `;
 
 export const CheckIco = styled(AiOutlineCheckCircle)`
@@ -177,3 +177,24 @@ export const CheckIco = styled(AiOutlineCheckCircle)`
   }
 `;
 
+export const PriceContainer = styled.div`  
+  width: 70%;
+  height: 75px;
+  text-align: center;
+  background: ${({dark}) => (dark ? '#000' : 'var(--yellow)')};
+  color: ${({dark}) => (dark ? '#fff' : '#000')};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+`
+
+export const PriceH1 = styled.h1`
+  font-size: 24px;
+  font-weight: 700;
+`
+
+export const PriceSmall = styled.small`
+  font-size: 14px;
+`

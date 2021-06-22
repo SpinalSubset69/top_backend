@@ -10,7 +10,9 @@ export const Plan1 = {
     descrip2: "Reducido número de personas",
     descrip3: "Costo mensual: $2,400",
     image: true,    
-    dark: true
+    dark: true,
+    price: '$2,500',
+    small: '*Costo Mensual'
 }
 
 export const Plan2 = {
@@ -21,7 +23,9 @@ export const Plan2 = {
     descrip2: "Disfruta de ejercitarte con tus amigo",
     descrip3: "$800 por sesión, máximo 6 personas",
     image: true,
-    dark: false
+    dark: false,
+    price: '$800',
+    small: '*Por sesión, grupo máximo de 6 personas'
 }
 
 export const Plan3 = {
@@ -32,7 +36,9 @@ export const Plan3 = {
     descrip2: "Entrena de acuerdo a tus necesidades",
     descrip3: "$500 por sesión",
     image: true,
-    dark: true
+    dark: true,
+    price: '$500',
+    small: '*Por Sesión'
 }
 
 export const Plan4 = {
@@ -42,7 +48,9 @@ export const Plan4 = {
     descrip2: "Duración máxima de 60 minutos",
     descrip3: "Entrena de acuerdo a tus necesidades",
     image: false,
-    dark: false
+    dark: false,
+    price: '$500',
+    small: '*El equipo deberá ser proporcionado por el usuario'
 }
 
 export const Plan5 = {
@@ -52,5 +60,7 @@ export const Plan5 = {
     descrip2: "Entrenador personal en todo momento",
     descrip3: "Plan totalmente ajustable a cada caso",
     image: false,
-    dark: true
+    dark: true,
+    price: '$500',
+    small: '*El equipo deberá ser proporcionado por el usuario'
 }

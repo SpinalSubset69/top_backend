@@ -13,6 +13,9 @@ import {
   PlanH3Container,
   PlanHeaderContiner,
   PlanH1Subtitle,
+  PriceContainer,
+  PriceH1,
+  PriceSmall
 } from "../PlanCard/CardElements";
 import ptIco from "../../static/pt-ico.png";
 import ffIco from "../../static/ff-ico.png";
@@ -27,6 +30,8 @@ const PlanCard = ({
   descrip3,
   image,
   dark,
+  price,
+  small
 }) => {
   return (
     <PlanItem>
@@ -51,8 +56,12 @@ const PlanCard = ({
           <PlanDescription>
             <CheckIco /> {descrip3}
           </PlanDescription>
-        </PlanDescriptionContainer>
+        </PlanDescriptionContainer>        
       </PlanOptionsContainer>
+      <PriceContainer dark={dark}>
+          <PriceH1>{price}</PriceH1>
+          <PriceSmall>{small}</PriceSmall>
+        </PriceContainer>
     </PlanItem>
   );
 };
