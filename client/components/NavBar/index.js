@@ -34,11 +34,11 @@ export const NavBar = ( { toggle } ) => {
               <NavLink to={`/planes`}>Planes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="about">Ubicación</NavLink>
+              <NavLink to="/location">Ubicación</NavLink>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/">Acceso</NavBtnLink>
+            <NavBtnLink to={`/login`}>Acceso</NavBtnLink>
           </NavBtn>
         </NavBarContainer>
       </Nav>

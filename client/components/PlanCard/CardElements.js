@@ -47,7 +47,7 @@ export const PlanH1Container = styled.div`
   align-items: center;  
   width: 100%;
   height: 300px;
-  background: ${({dark}) => (dark ? '#000000' : 'var(--yellow)')};
+  background: ${({dark}) => (dark ? 'var(--dark)' : 'var(--yellow)')};
 `;
 export const PlanH3Container = styled.div`
   padding-top: 10px;
@@ -59,7 +59,7 @@ export const PlanH3Container = styled.div`
   width: 350px;
   height: 100px;
   transform: translateY(50px);
-  background: ${({dark}) => (dark ? 'var(--yellow)' : '#000')};
+  background: ${({dark}) => (dark ? 'var(--yellow)' : 'var(--dark)')};
   color: ${({dark}) => (dark ? '#000' : '#fff')} ;
 
   @media screen and (max-width: 1120px) {
@@ -82,7 +82,7 @@ export const PlanH3Container = styled.div`
 export const PlanH1 = styled.h1`
   font-size: 40px;
   font-weight: 700;
-  color: ${({dark}) => (dark ? 'var(--yellow)' : 'var(--black)')};
+  color: ${({dark}) => (dark ? 'var(--yellow)' : 'var(--dark)')};
   @media screen and (max-width: 411px) {
     font-size: 30px;
   }
@@ -181,7 +181,7 @@ export const PriceContainer = styled.div`
   width: 70%;
   height: 75px;
   text-align: center;
-  background: ${({dark}) => (dark ? '#000' : 'var(--yellow)')};
+  background: ${({dark}) => (dark ? 'var(--dark)' : 'var(--yellow)')};
   color: ${({dark}) => (dark ? '#fff' : '#000')};
   display: flex;
   flex-direction: column;

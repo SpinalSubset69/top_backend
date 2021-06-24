@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
-  --background-main : #FCE355a8;
+  --background-main : #F3AB33;
   --yellow: #FCE355;
   --black: #2c2c22;
   --green: #77bc1f;
-  --dark: #000000;
+  --dark: #05161D;
+  --orange: #F3AB33;
+  --turquoise: #004F4C;
+  --blue: #103A39;
+  --darkBlue: #05161D;
 }
 
-html{
-  scroll-behavior: smooth;
+body{
+  scroll-behavior:smooth;
 }
 
 body {
