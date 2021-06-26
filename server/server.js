@@ -5,6 +5,8 @@ import path from "path";
 import devBundle from "./devBundle";
 import express from "express";
 import userRouter from "./routes/user.routes";
+import staffRouter from './routes/staff.routes';
+import cors from 'cors';
 
 const app = express();
 const CURRENT_WORKING_DIR = process.cwd();
@@ -21,6 +23,7 @@ app.use("/dist", express.static(path.join(CURRENT_WORKING_DIR, "./dist")));
 
 //Routes
 app.use("/api", userRouter);
+app.use('/api', staffRouter);
 
 //Send react components to browser DO NOT MOVE
 app.get("*", (req, res) => {

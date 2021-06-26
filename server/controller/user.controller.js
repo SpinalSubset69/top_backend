@@ -1,8 +1,15 @@
 import User from "../models/user.model";
 import validateDates from "../helpers/dates";
+import tokenHelper from '../helpers/validateToken';
 
 const controller = {
   get_users: async (req, res) => {
+
+    //Verify if token was provided in petition
+    const token  = req.headers['x-access-token'];
+    tokenHelper.validateToken(res, token);
+
+    //Get all users list
     let users = await User.find();
     if (!users) {
       return res.status(404).send({
@@ -17,6 +24,11 @@ const controller = {
     });
   },
   create_user: async (req, res) => {
+
+    //Verify if token was provided in petition
+    const token = req.headers['x-access-token'];
+    tokenHelper.validateToken(res, token);
+
     const { months, name, email, phone, plan } = req.body;
     const user = new User({
       months,
@@ -42,7 +54,7 @@ async function validateUsersStatus(users){
       for (let user in users) {
         let endDate = users[user].end_membership;   
         const isValidate = validateDates.validateRange(endDate);  
-        console.log(isValidate);
+
         if(!isValidate) {
             await User.updateOne({"_id" : users[user]._id}, {
             isActived: false
