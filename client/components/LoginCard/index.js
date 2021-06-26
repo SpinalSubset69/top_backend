@@ -7,8 +7,7 @@ import {
   CardWrapper,
   CardLogo,
   CardForm,
-  CardFormButton,
-  CardFormLabel,
+  CardFormButton,  
   CardHeader,
   CardFormInput,
   SpinLoader,
@@ -77,6 +76,9 @@ const LoginCard = () => {
         setWarning(true);
         setMessage('Wrong Password')
         setSession(false);
+        setTimeout(()=> {
+          setWarning(false);
+        }, 3000)
       }
     });    
   }

@@ -5,6 +5,7 @@ export const LoginContainer = styled.div`
     height: 100%;
     display: flex;
     z-index: 3;
+    border-radius: 20px;
 `
 
 export const AsideLeft = styled.div`

@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
     background: var(--orange);
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;        
    z-index: 3;
 `
 
@@ -21,6 +21,7 @@ export const CardWrapper = styled.div`
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
     transform: scale(1.02);
     padding: 20px;
+    border-radius: 20px;
 `
 
 export const CardLogo = styled.img`

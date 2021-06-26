@@ -9,7 +9,7 @@ const Login = () => {
             <LoginContainer>   
                 <AsideLeft/>           
                 <LoginCard/>
-                <AsideRight></AsideRight>       
+                <AsideRight/>
             </LoginContainer>      
         </>
     )
