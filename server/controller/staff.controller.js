@@ -47,7 +47,7 @@ const controller = {
         const staff = await Staff.findOne({email: email});
 
         if(!staff){
-            return res.status(404).json({ message: 'Email doesn\'t exists' });
+            return res.status(404).json({ message: 'Wrong Email' });
         }
 
         const isValid = await staff.validatePassword(password);

@@ -48,4 +48,29 @@ body {
   }
 }
 
+@keyframes slideUp {
+  from{
+    margin-bottom: 500px;
+  }to{
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes fromUp {
+  from{
+    top: 80px;
+  }to{
+    top: 70%;
+  }
+}
+
+@keyframes rotate {
+  from{
+    transform:rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+  
+}
+
 /* End KeyFrames */

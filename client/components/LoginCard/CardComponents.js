@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;    
+   z-index: 3;
 `
 
 export const CardWrapper = styled.div`
@@ -81,4 +82,31 @@ export const CardFormButton = styled.button`
     &:focus{
         outline: none;
     }
+`
+
+export const SpinLoaderContainer = styled.div`
+    width: 100%;
+    height: 350px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    animation: slideUp 0.5s ease both;
+`
+
+export const SpinLoader = styled.div`
+width: 100px;
+height: 100px;
+border: 4px solid rgba(0, 0, 0, 0.1);
+border-radius: 100%;
+border-left-color: #09f;
+animation: rotate 3s ease infinite;
+`
+
+export const SpinLoaderHeader = styled.h1`
+    font-size: 38px;
+    font-weight: 700;
 `
